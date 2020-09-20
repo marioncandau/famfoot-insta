@@ -1,0 +1,193 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    Sizes = (
+      450s
+      646s
+      450s
+      646s
+      450s
+      646s)
+    inherited ExtraireTab: TTabItem
+      Size.Width = 150.000000000000000000
+      ExplicitSize.cx = 67.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited Layout1: TLayout
+        Size.Width = 450.000000000000000000
+        inherited ExtraireButton: TButton
+          Position.X = 316.000000000000000000
+        end
+      end
+      inherited Layout6: TLayout
+        Size.Width = 450.000000000000000000
+        inherited ComboBox1: TComboBox
+          Size.Width = 410.000000000000000000
+        end
+      end
+    end
+    inherited GenererTab: TTabItem
+      Size.Width = 150.000000000000000000
+      ExplicitSize.cx = 140.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited TabControl2: TTabControl
+        Size.Width = 450.000000000000000000
+        Size.Height = 646.000000000000000000
+        Sizes = (
+          450s
+          597s
+          450s
+          597s
+          450s
+          597s
+          450s
+          597s)
+        inherited GenR1Nord: TTabItem
+          Size.Width = 112.000000000000000000
+          ExplicitSize.cx = 105.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited Layout7: TLayout
+            Position.Y = 534.000000000000000000
+            Size.Width = 450.000000000000000000
+            inherited GenButtonR1Nord: TButton
+              Position.X = 316.000000000000000000
+            end
+          end
+          inherited Memo1: TMemo
+            Size.Width = 450.000000000000000000
+            Size.Height = 534.000000000000000000
+            Viewport.Width = 450.000000000000000000
+            Viewport.Height = 534.000000000000000000
+          end
+        end
+        inherited GenR1Sud: TTabItem
+          Size.Width = 112.000000000000000000
+          ExplicitSize.cx = 105.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited Layout8: TLayout
+            Position.Y = 534.000000000000000000
+            Size.Width = 450.000000000000000000
+            inherited GenButtonR1Sud: TButton
+              Position.X = 316.000000000000000000
+            end
+          end
+          inherited Memo2: TMemo
+            Size.Width = 450.000000000000000000
+            Size.Height = 534.000000000000000000
+            Viewport.Width = 450.000000000000000000
+            Viewport.Height = 534.000000000000000000
+          end
+        end
+        inherited GenR2Nord: TTabItem
+          Size.Width = 112.000000000000000000
+          ExplicitSize.cx = 105.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited Layout9: TLayout
+            Position.Y = 534.000000000000000000
+            Size.Width = 450.000000000000000000
+            inherited GenButtonR2Nord: TButton
+              Position.X = 316.000000000000000000
+            end
+          end
+          inherited Memo3: TMemo
+            Size.Width = 450.000000000000000000
+            Size.Height = 534.000000000000000000
+            Viewport.Width = 450.000000000000000000
+            Viewport.Height = 534.000000000000000000
+          end
+        end
+        inherited GenR2Sud: TTabItem
+          Size.Width = 114.000000000000000000
+          ExplicitSize.cx = 105.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+          inherited Layout10: TLayout
+            Position.Y = 534.000000000000000000
+            Size.Width = 450.000000000000000000
+            inherited GenButtonR2Sud: TButton
+              Position.X = 316.000000000000000000
+            end
+          end
+          inherited Memo4: TMemo
+            Size.Width = 450.000000000000000000
+            Size.Height = 534.000000000000000000
+            Viewport.Width = 450.000000000000000000
+            Viewport.Height = 534.000000000000000000
+          end
+        end
+      end
+    end
+    inherited VisualizeTab: TTabItem
+      Size.Width = 150.000000000000000000
+      ExplicitSize.cx = 140.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited TabControl3: TTabControl
+        Size.Width = 450.000000000000000000
+        Size.Height = 646.000000000000000000
+        Sizes = (
+          450s
+          597s
+          450s
+          597s
+          450s
+          597s
+          450s
+          597s)
+        inherited ImR1Nord: TTabItem
+          Size.Width = 112.000000000000000000
+          ExplicitSize.cx = 53.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          inherited Layout2: TLayout
+            Position.Y = 539.000000000000000000
+            Size.Width = 450.000000000000000000
+            inherited SaveButtonR1Nord: TButton
+              Position.X = 268.000000000000000000
+            end
+          end
+          inherited Layout11: TLayout
+            Size.Width = 450.000000000000000000
+            Size.Height = 539.000000000000000000
+          end
+        end
+        inherited ImR1Sud: TTabItem
+          Size.Width = 112.000000000000000000
+          ExplicitSize.cx = 53.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          inherited Layout3: TLayout
+            Position.Y = 539.000000000000000000
+            Size.Width = 450.000000000000000000
+            inherited SaveButtonR1Sud: TButton
+              Position.X = 268.000000000000000000
+            end
+          end
+        end
+        inherited ImR2Nord: TTabItem
+          Size.Width = 112.000000000000000000
+          ExplicitSize.cx = 53.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          inherited Layout4: TLayout
+            Position.Y = 539.000000000000000000
+            Size.Width = 450.000000000000000000
+            inherited SaveButtonR2Nord: TButton
+              Position.X = 268.000000000000000000
+            end
+          end
+        end
+        inherited ImR2Sud: TTabItem
+          Size.Width = 114.000000000000000000
+          ExplicitSize.cx = 53.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          inherited Layout5: TLayout
+            Position.Y = 539.000000000000000000
+            Size.Width = 450.000000000000000000
+            inherited SaveButtonR2Sud: TButton
+              Position.X = 268.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+end
