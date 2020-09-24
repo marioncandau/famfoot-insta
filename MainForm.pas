@@ -66,11 +66,13 @@ type
   private
     typ: string;
     function RecoverChamp(champ: string; typ: string): TstringList;
+{$IFDEF ANDROID}
     procedure AccessWritePermissionRequestResult(Sender: TObject;
       const APermissions: TArray<string>;
       const AGrantResults: TArray<TPermissionStatus>);
     procedure DisplayRationale(Sender: TObject;
       const APermissions: TArray<string>; const APostRationaleProc: TProc);
+{$ENDIF}
   public
     { Déclarations publiques }
   end;
@@ -491,7 +493,7 @@ end;
 
 function TForm1.RecoverChamp(champ: string; typ: string): TstringList;
 var
-  url, s, res: string;
+  url, s, res, temp: string;
   IdHTTP: TIdHTTP;
   p, endp, i: integer;
 begin
@@ -510,12 +512,24 @@ begin
   res := s.Substring(p - 1, endp - p);
 
   res := res.Replace('<br />', '<br />|');
+  res := res.Replace('MAZERES UZOS RONTIGN', 'ASMUR');
 
   if typ = 'Agenda' then
   begin
     res := res.Replace(' (1ER)', '');
     for i := 2 to 12 do
       res := res.Replace(' (' + IntToStr(i) + 'EME)', '');
+  end
+  else
+  begin
+    while Pos('(', res) <> 0 do
+    begin
+      p := Pos('(', res);
+      endp := Pos(')', res);
+      temp := res.Substring(0, p - 1);
+      temp := temp + res.Substring(endp, Length(res) - endp);
+      res := temp;
+    end;
   end;
 
   result := TstringList.Create;
