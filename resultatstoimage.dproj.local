@@ -2,9 +2,9 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2019/08/24 10:50:22.000.363,=C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
-    <Transaction>2019/08/24 11:02:39.000.473,C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\Unit1.fmx=C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\ResultatsToImage\MainForm.fmx</Transaction>
-    <Transaction>2019/08/24 11:02:39.000.473,C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\Unit1.pas=C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\ResultatsToImage\MainForm.pas</Transaction>
-    <Transaction>2019/08/24 11:47:25.000.143,C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\Project1.dproj=C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\ResultatsToImage\resultatstoimage.dproj</Transaction>
+    <Transaction>2019/08/24 11:02:39.000.473,C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\ResultatsToImage\MainForm.fmx=C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\Unit1.fmx</Transaction>
+    <Transaction>2019/08/24 11:02:39.000.473,C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\ResultatsToImage\MainForm.pas=C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2019/08/24 11:47:25.000.143,C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\ResultatsToImage\resultatstoimage.dproj=C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\Project1.dproj</Transaction>
     <Transaction>2020/09/19 20:56:24.000.342,=C:\Users\mario\OneDrive\Documents\Embarcadero\Studio\Projets\ResultatsToImage\FMX.FontGlyphs.Android.pas</Transaction>
   </Transactions>
 	<ActiveMobileDevice>

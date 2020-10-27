@@ -511,8 +511,10 @@ begin
   endp := Pos('<a href', s, p);
   res := s.Substring(p - 1, endp - p);
 
+  res := res.Replace('</p></strong>', '</strong><br />');
   res := res.Replace('<br />', '<br />|');
   res := res.Replace('MAZERES UZOS RONTIGN', 'ASMUR');
+  res := res.Replace('<p style="font-size: small">', '');
 
   if typ = 'Agenda' then
   begin
