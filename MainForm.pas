@@ -8,7 +8,9 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
   FMX.StdCtrls, FMX.Layouts, FMX.TabControl, FMX.Controls.Presentation,
   FMX.ScrollBox, FMX.Memo, FMX.ListBox, IdHTTP, FMX.Platform,
-  System.Permissions;
+  System.Permissions, IdBaseComponent, IdComponent, IdIOHandler,
+  IdIOHandlerSocket, IdIOHandlerStack, IdSSL, IdSSLOpenSSL,
+  System.Net.URLClient, System.Net.HttpClient, System.Net.HttpClientComponent;
 
 type
   TForm1 = class(TForm)
@@ -56,6 +58,7 @@ type
     Layout2: TLayout;
     SaveButtonR1Nord: TButton;
     Layout11: TLayout;
+    NetHTTPClient1: TNetHTTPClient;
     procedure ExtraireButtonClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure SaveButtonR1NordClick(Sender: TObject);
@@ -231,10 +234,6 @@ begin
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
-{$IFDEF ANDROID}
-var
-  AppEventSvc: IFMXApplicationEventService;
-{$ENDIF}
 begin
 {$IFDEF ANDROID}
   PermissionsService.RequestPermissions([PermissionWrite],
@@ -494,16 +493,14 @@ end;
 function TForm1.RecoverChamp(champ: string; typ: string): TstringList;
 var
   url, s, res, temp: string;
-  IdHTTP: TIdHTTP;
   p, endp, i: integer;
 begin
   if typ = 'Agenda' then
-    url := 'http://famfoot.fr/agenda/'
+    url := 'https://famfoot.fr/agenda/'
   else
-    url := 'http://famfoot.fr/resultats/';
+    url := 'https://famfoot.fr/resultats/';
 
-  IdHTTP := TIdHTTP.Create;
-  s := IdHTTP.Get(url);
+  s := NetHttpClient1.Get(url).ContentAsString;
 
   p := Pos(champ, s);
 
